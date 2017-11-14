@@ -17,7 +17,7 @@ public class StudentRecord
      */
    
    public StudentRecord(int[] scores) {
-       this.scores = scores;
+      this.scores = scores;
    }
    
      /**
@@ -29,11 +29,13 @@ public class StudentRecord
      */
    
    private double average(int first, int last) {
-       double sum = 0;
-       for (int i = first; i <= last; i++) {
-          sum += scores[i]; 
-       }
-       return sum / (last+1 - first);
+      double sum = 0;
+      
+      for (int i = first; i <= last; i++) {
+         sum += scores[i]; 
+      }
+      
+      return sum / (last+1 - first);
    }
     
      /**
@@ -43,10 +45,12 @@ public class StudentRecord
      */
    
    private boolean hasImproved() {
-       for (int i = 1; i < scores.length; i++) {
-           if (scores[i-1] > scores[i]) return false;
-        }
-        return true;
+      
+      for (int i = 1; i < scores.length; i++) {
+          if (scores[i-1] > scores[i]) return false;
+      }
+      
+      return true;
    }
     
      /**
@@ -55,12 +59,15 @@ public class StudentRecord
      * @return Average of test scores based on score improvement.
      */
    public double finalAverage() {
-       int first = 0;
-       int last = scores.length-1;
-       if(hasImproved()) {
-           first = scores.length/2;
-        }
-       return average(first, last);
+      
+      int first = 0;
+      int last = scores.length-1;
+      
+      if(hasImproved()) {
+          first = scores.length/2;
+       }
+      
+      return average(first, last);
     }
     
 }

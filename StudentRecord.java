@@ -2,8 +2,8 @@
 /**
  * Write a description of class StudentRecord here.
  *
- * @author (your name)
- * @version (a version number or a date)
+ * @author Chris Gaber
+ * @version 11/13/17
  */
 public class StudentRecord
 {

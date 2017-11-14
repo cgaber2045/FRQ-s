@@ -8,6 +8,7 @@
 
 public class StudentRecord
 {
+   
    public int[] scores;
      
    /**
@@ -17,7 +18,9 @@ public class StudentRecord
      */
    
    public StudentRecord(int[] scores) {
+      
       this.scores = scores;
+      
    }
    
      /**
@@ -29,6 +32,7 @@ public class StudentRecord
      */
    
    private double average(int first, int last) {
+      
       double sum = 0;
       
       for (int i = first; i <= last; i++) {
@@ -36,6 +40,7 @@ public class StudentRecord
       }
       
       return sum / (last+1 - first);
+      
    }
     
      /**
@@ -47,7 +52,9 @@ public class StudentRecord
    private boolean hasImproved() {
       
       for (int i = 1; i < scores.length; i++) {
+         
           if (scores[i-1] > scores[i]) return false;
+         
       }
       
       return true;
@@ -64,7 +71,9 @@ public class StudentRecord
       int last = scores.length-1;
       
       if(hasImproved()) {
+         
           first = scores.length/2;
+         
        }
       
       return average(first, last);

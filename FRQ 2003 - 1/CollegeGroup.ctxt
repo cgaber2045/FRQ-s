@@ -1,0 +1,11 @@
+#BlueJ class context
+comment0.target=CollegeGroup
+comment0.text=\r\n\ Write\ a\ description\ of\ class\ CollegeGroup\ here.\r\n\r\n\ @author\ (your\ name)\r\n\ @version\ (a\ version\ number\ or\ a\ date)\r\n
+comment1.params=
+comment1.target=CollegeGroup()
+comment2.params=collegeName\ newTuition
+comment2.target=void\ updateTuition(java.lang.String,\ int)
+comment2.text=\r\n\ An\ example\ of\ a\ method\ -\ replace\ this\ comment\ with\ your\ own\r\n\r\n\ @param\ \ y\ \ a\ sample\ parameter\ for\ a\ method\r\n\ @return\ \ \ \ the\ sum\ of\ x\ and\ y\r\n
+comment3.params=region\ low\ high
+comment3.target=College[]\ getCollegeList(java.lang.String,\ int,\ int)
+numComments=4

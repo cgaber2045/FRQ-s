@@ -11,6 +11,10 @@ public class College
     private String region;
     private int tuition;
     
+    /**
+     * Constructor for College.
+     */
+    
     public College(String name, String region, int tuition)
     {
         this.name = name;
@@ -18,20 +22,39 @@ public class College
         this.tuition = tuition;
     }
     
+    /**
+     * Gets the name of object.
+     * @return name  name of the object
+     */
+    
     public String getName()
     {
         return name;
     }
+    
+    /**
+     * Gets the region of object.
+     * @return region  region of the object
+     */
     
     public String getRegion()
     {
         return region;
     }
     
+    /**
+     * Gets the tuition of object.
+     * @return tuition  tuition of the object.
+     */
+    
     public int getTuition()
     {
         return tuition;
     }
+    
+    /**
+     * Sets the tuition of object.
+     */
     
     public void setTuition(int newTuition)
     {

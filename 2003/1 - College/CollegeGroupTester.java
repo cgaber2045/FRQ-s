@@ -9,6 +9,7 @@ import java.util.Arrays;
 
 public class CollegeGroupTester
 {
+    
      public static void main(String[] args)
        {
             College c1 = new College("ColgateUniversity", "Northeast", 27025);

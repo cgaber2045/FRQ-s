@@ -49,6 +49,7 @@ public class CollegeGroup
             myColleges[i].getTuition() >= low &&
             myColleges[i].getTuition() <= high) {
                 result[count2] = myColleges[i];
+                count2++;
             }
         }
         return result;

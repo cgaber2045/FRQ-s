@@ -39,6 +39,6 @@ public class College
     }
     
     public String toString() {
-        return name + " " + region + " " + tuition;
+        return name + ", " + region + ", " + tuition;
     }
 }

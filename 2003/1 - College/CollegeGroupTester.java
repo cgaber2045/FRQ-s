@@ -29,11 +29,14 @@ public class CollegeGroupTester
             colleges.myColleges[5] = c6;
             colleges.myColleges[6] = c7;
             
-            colleges.updateTuition("ColgateUniversity", 27500);
             College[] matches = colleges.getCollegeList("Southeast", 10000, 20000);
             
             for (int i = 0; i < matches.length; i++) {
-                System.out.println(Arrays.toString(matches));
+                System.out.println(matches[i]);
             }
+            
+            System.out.println(c1);            
+            colleges.updateTuition("ColgateUniversity", 27500);
+            System.out.println(c1);
        }
 }

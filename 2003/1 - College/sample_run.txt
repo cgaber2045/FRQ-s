@@ -1,0 +1,4 @@
+FloridaInternationalUniversity, Southeast, 10800
+SpelmanCollege, Southeast, 11455
+ColgateUniversity, Northeast, 27025
+ColgateUniversity, Northeast, 27500

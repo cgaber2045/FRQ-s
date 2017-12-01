@@ -8,15 +8,15 @@
 
 public class CollegeGroup
 {
-    public College[] myColleges;
+    private College[] myColleges;
     
     /**
      * Constructor for the CollegeGroup.
      */
     
-    public CollegeGroup() {
+    public CollegeGroup(College[] myColleges) {
         
-        this.myColleges = new College[7];
+        this.myColleges = myColleges;
         
     }
     

@@ -13,6 +13,10 @@ public class College
     
     /**
      * Constructor for College.
+     * 
+     * @param name name of the college.
+     * @param  region  region of the college.
+     * @param  tuition  cost of tuition of the college.
      */
     
     public College(String name, String region, int tuition)

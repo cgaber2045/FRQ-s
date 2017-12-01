@@ -20,16 +20,9 @@ public class CollegeGroupTester
             College c6 = new College("DartmouthCollege", "Northeast", 27764);
             College c7 = new College("SpelmanCollege", "Southeast", 11455);
             
-            CollegeGroup colleges = new CollegeGroup();
-            
-            colleges.myColleges[0] = c1;
-            colleges.myColleges[1] = c2;
-            colleges.myColleges[2] = c3;
-            colleges.myColleges[3] = c4;
-            colleges.myColleges[4] = c5;
-            colleges.myColleges[5] = c6;
-            colleges.myColleges[6] = c7;
-            
+            College[] myColleges = {c1, c2, c3, c4, c5, c6, c7};
+            CollegeGroup colleges = new CollegeGroup(myColleges);
+
             College[] matches = colleges.getCollegeList("Southeast", 10000, 20000);
             
             for (int i = 0; i < matches.length; i++) {
@@ -39,5 +32,6 @@ public class CollegeGroupTester
             System.out.println(c1);            
             colleges.updateTuition("ColgateUniversity", 27500);
             System.out.println(c1);
+            
        }
 }

@@ -11,9 +11,8 @@ public class SelfDivisorTester
 {
     public static void main(String[] args)
        {
-           SelfDivisor r1 = new SelfDivisor();
-            System.out.println(r1.isSelfDivisor(128));
-            System.out.println(Arrays.toString(r1.firstNumSelfDivisors(10, 3)));
+            System.out.println(SelfDivisor.isSelfDivisor(128));
+            System.out.println(Arrays.toString(SelfDivisor.firstNumSelfDivisors(10, 3)));
        }
 
 }

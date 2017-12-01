@@ -12,6 +12,7 @@ public class CollegeGroup
     
     /**
      * Constructor for the CollegeGroup.
+     * @param  myColleges  array of colleges
      */
     
     public CollegeGroup(College[] myColleges) {

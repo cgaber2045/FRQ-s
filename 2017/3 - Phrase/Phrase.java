@@ -35,12 +35,12 @@ public class Phrase
         int pos = 0;
         int i = 0;
         
-        while (i < n) {
+        while (i < n && pos != -1) {
             pos = currentPhrase.indexOf(str, pos+1);
             i++;
         }
         
-        return currentPhrase.indexOf(str, pos);
+        return pos;
         
     }
     

@@ -31,17 +31,22 @@ public class Phrase
     
     public int findNthOccurrence(String str, int n)
     {
+            
+        int pos = currentPhrase.indexOf(str);
         
-        int pos = 0;
-        int i = 0;
-        
-        while (i < n && pos != -1) {
+        if ( pos==-1) {
+            return -1;
+        }
+    
+        for ( int i = 1; i < n; i++ ) {
             pos = currentPhrase.indexOf(str, pos+1);
-            i++;
+            if (pos == -1) {
+                return -1;
+            }
         }
         
         return pos;
-        
+            
     }
     
     /**

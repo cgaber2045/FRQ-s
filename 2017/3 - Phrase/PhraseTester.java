@@ -34,7 +34,9 @@ public class PhraseTester
         System.out.println(phrase5);
         
         //Test Phrase
-        Phrase testphrase = new Phrase("A cat ate late");
-        System.out.println(testphrase.findNthOccurrence("at", 3));
+        Phrase testphrase = new Phrase("A cat ate late.");
+        System.out.println(testphrase.findLastOccurrence("at"));
+        System.out.println(testphrase.findLastOccurrence("cat"));
+        System.out.println(testphrase.findLastOccurrence("bat"));
     }
 }

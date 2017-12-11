@@ -34,11 +34,11 @@ public class Phrase
             
         int pos = currentPhrase.indexOf(str);
         
-        if ( pos==-1) {
+        if (pos==-1) {
             return -1;
         }
     
-        for ( int i = 1; i < n; i++ ) {
+        for (int i = 1; i < n; i++) {
             pos = currentPhrase.indexOf(str, pos+1);
             if (pos == -1) {
                 return -1;

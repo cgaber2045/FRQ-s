@@ -2,66 +2,105 @@
 /**
  * Write a description of class Phrase here.
  *
- * @author (your name)
- * @version (a version number or a date)
+ * @author Chris Gaber
+ * @version 12/11/17
  */
 public class Phrase
 {
+    
     private String currentPhrase;
 
     /**
      * Constructor for objects of class Phrase
+     * @param p The phrase that you want tested.
      */
     public Phrase(String p)
     {
+        
         currentPhrase = p;
+        
     }
 
     /**
-     * An example of a method - replace this comment with your own
+     * Finds the index of the Nth occurrence of a sting.
      *
-     * @param  y  a sample parameter for a method
-     * @return    the sum of x and y
+     * @param  str  the string to be found within the phrase.
+     * @param  n  the nth occurrance of the string.
+     * @return  index of the nth occurrence of a string.
      */
+    
     public int findNthOccurrence(String str, int n)
     {
-        /**
-        int index = 0;
         
-        for (int i = 0; i < n; i++) {
-            index = currentPhrase.indexOf(str, index+1);
+        int pos = 0;
+        int i = 0;
+        
+        while (i < n) {
+            pos = currentPhrase.indexOf(str, pos+1);
+            i++;
         }
         
-        return currentPhrase.indexOf(str, index);
-        */
-       
-       return 0;
+        return currentPhrase.indexOf(str, pos);
+        
     }
+    
+    /**
+     * Replaces the Nth occurrence of a sting.
+     *
+     * @param  str  the string to be found within the phrase.
+     * @param  n  the nth occurrance of the string.
+     * @param  repl  the string you want to replace str with.
+     * @return  index of the nth occurrence of a string.
+     */
     
     public void replaceNthOccurrence(String str, int n, String repl)
     {
+        
         String result ="";
         int position = findNthOccurrence(str, n);
+        
         if (position != -1) {
+            
             result += currentPhrase.substring(0, position);
             result += repl;
             result += currentPhrase.substring(position+str.length());
+            
             currentPhrase = result;
+            
         }
+        
     }
+    
+    /**
+     * Finds the last occurrence of a sting.
+     *
+     * @param  str  the string to be found within the phrase.
+     * @return  index of the last occurrence of a string.
+     */
     
     public int findLastOccurrence(String str)
     {
         int count = 1;
         
         while (findNthOccurrence(str, count+1) != -1) {
+            
             count++;
+            
         }
         
         return findNthOccurrence(str, count);
     }
     
+    /**
+     * Prints the phrase of the object.
+     *
+     * @return  the string currentPhrase.
+     */
+    
     public String toString() {
+        
         return currentPhrase;
+        
     }
+    
 }

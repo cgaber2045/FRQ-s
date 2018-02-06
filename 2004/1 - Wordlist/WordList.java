@@ -2,8 +2,8 @@
 /**
  * Write a description of class WordList here.
  *
- * @author (your name)
- * @version (a version number or a date)
+ * @author Chris Gaber
+ * @version 2/6/18
  */
 
 import java.util.ArrayList;

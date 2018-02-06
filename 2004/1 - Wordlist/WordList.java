@@ -72,8 +72,11 @@ public class WordList
      *
      * @return the Arraylist as a String
      */
+    
     public String toString() {
+        
          return myList.toString();
+        
     }
     
 }

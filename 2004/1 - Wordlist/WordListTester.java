@@ -20,8 +20,17 @@ public class WordListTester
         
         WordList r1 = new WordList(myList);
         
+        System.out.println(r1.numWordsOfLength(4));
+        System.out.println(r1.numWordsOfLength(3));
         System.out.println(r1.numWordsOfLength(2));
+        
         r1.removeWordsOfLength(4);
+        System.out.println(myList);
+        
+        r1.removeWordsOfLength(3);
+        System.out.println(myList);
+        
+        r1.removeWordsOfLength(2);
         System.out.println(myList);
    }
 }

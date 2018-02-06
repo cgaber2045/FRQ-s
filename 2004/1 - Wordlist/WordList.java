@@ -66,6 +66,16 @@ public class WordList
             
         }
     }
+    
+    /**
+     * Converts to String.
+     *
+     * @return the Arraylist as a String
+     */
+    public String toString() {
+         return myList.toString();
+    }
+    
 }
 
 

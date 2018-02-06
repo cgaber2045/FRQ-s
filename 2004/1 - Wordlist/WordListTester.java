@@ -25,12 +25,12 @@ public class WordListTester
         System.out.println(r1.numWordsOfLength(2));
         
         r1.removeWordsOfLength(4);
-        System.out.println(myList);
+        System.out.println(r1);
         
         r1.removeWordsOfLength(3);
-        System.out.println(myList);
+        System.out.println(r1);
         
         r1.removeWordsOfLength(2);
-        System.out.println(myList);
+        System.out.println(r1);
    }
 }

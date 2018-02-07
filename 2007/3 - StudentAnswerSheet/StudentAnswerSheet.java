@@ -10,14 +10,14 @@ import java.util.ArrayList;
 
 public class StudentAnswerSheet
 {
-    // instance variables - replace the example below with your own
+    // instance variables
     private ArrayList<String> answers;
     private String name;
     
     /**
      * Constructor for objects of class StudentAnswerSheet
      */
-    public StudentAnswerSheet()
+    public StudentAnswerSheet(String name, ArrayList<String> answers)
     {
         this.name = name;
         this.answers = answers;
@@ -26,12 +26,12 @@ public class StudentAnswerSheet
     /**
      * An example of a method - replace this comment with your own
      *
-     * @param  y  a sample parameter for a method
-     * @return    the sum of x and y
+     * @param  key  the list of correct answers, represented as strings of length one
+     * @return this student's test score
      */
     public double getScore(ArrayList<String> key)
     {
-        double score = Integer.MIN_VALUE;
+        double score = 0;
         for (int i = 0; i < key.size(); i++) {
             if (key.get(i).equals(answers.get(i))) score++;
             else if (!"?".equals(answers.get(i))) score -= 0.25;
@@ -40,6 +40,9 @@ public class StudentAnswerSheet
         return score;
     }
     
+    /**
+     * @return the name of the student
+     */
     public String getName() {
         return name;
     }

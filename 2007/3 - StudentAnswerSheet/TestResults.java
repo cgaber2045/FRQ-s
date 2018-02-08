@@ -12,6 +12,7 @@ public class TestResults
 {
     private ArrayList<StudentAnswerSheet> sheets;
 
+    // Constructor for the class TestResults
     public TestResults(ArrayList<StudentAnswerSheet> sheets) {
         
         this.sheets = sheets;
@@ -19,6 +20,8 @@ public class TestResults
     }
     
     /**
+     * Returns the name of a student with the highest score. 
+     *
      * @param  key the list of correct answers represented as strings of length one
      * @return the name of the student with the highest score
      */

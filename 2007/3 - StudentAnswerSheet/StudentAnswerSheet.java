@@ -19,8 +19,10 @@ public class StudentAnswerSheet
      */
     public StudentAnswerSheet(String name, ArrayList<String> answers)
     {
+        
         this.name = name;
         this.answers = answers;
+        
     }
 
     /**
@@ -31,10 +33,14 @@ public class StudentAnswerSheet
      */
     public double getScore(ArrayList<String> key)
     {
+        
         double score = 0;
+        
         for (int i = 0; i < key.size(); i++) {
+            
             if (key.get(i).equals(answers.get(i))) score++;
             else if (!"?".equals(answers.get(i))) score -= 0.25;
+            
         }
         
         return score;
@@ -44,6 +50,8 @@ public class StudentAnswerSheet
      * @return the name of the student
      */
     public String getName() {
+        
         return name;
+        
     }
 }

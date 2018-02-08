@@ -10,8 +10,13 @@ import java.util.ArrayList;
 
 public class TestResults
 {
-    private ArrayList<String> sheets;
+    private ArrayList<StudentAnswerSheet> sheets;
+    private ArrayList<TestResults> results;
 
+    public TestResults(ArrayList<StudentAnswerSheet> sheets) {
+        this.sheets = sheets;
+    }
+    
     /**
      * @param  key the list of correct answers represented as strings of length one
      * @return the name of the student with the highest score
@@ -22,14 +27,13 @@ public class TestResults
         String name = "";
         double score = Integer.MIN_VALUE;
         
-        for (String x : sheets) {
+        for (StudentAnswerSheet x : sheets) {
             if (x.getScore(key) > score) {
                 score = x.getScore(key);
                 name = x.getName();
             }
-            
-            return name;
         }
+        return name;
     }
     
     public static void main(String args[]) {
@@ -59,11 +63,12 @@ public class TestResults
         
         StudentAnswerSheet r1 = new StudentAnswerSheet("Chris", answers);
         
-        ArrayList sheets = new ArrayList();
+        ArrayList<StudentAnswerSheet> sheets = new ArrayList<StudentAnswerSheet>();
         sheets.add(r1);
         
+        TestResults results = new TestResults(sheets);
         System.out.println(r1.getScore(key));
-        System.out.println(r1.highestScoringStudent(key));
+        System.out.println(results.highestScoringStudent(key));
 
     }
 }

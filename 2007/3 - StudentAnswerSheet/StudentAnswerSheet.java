@@ -26,7 +26,7 @@ public class StudentAnswerSheet
     }
 
     /**
-     * An example of a method - replace this comment with your own
+     * Gets the scores of the student
      *
      * @param  key  the list of correct answers, represented as strings of length one
      * @return this student's test score

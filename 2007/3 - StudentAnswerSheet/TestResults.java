@@ -13,7 +13,9 @@ public class TestResults
     private ArrayList<StudentAnswerSheet> sheets;
 
     public TestResults(ArrayList<StudentAnswerSheet> sheets) {
+        
         this.sheets = sheets;
+        
     }
     
     /**
@@ -23,15 +25,22 @@ public class TestResults
     
     public String highestScoringStudent(ArrayList<String> key)
     {
+        
         String name = "";
         double score = Integer.MIN_VALUE;
         
         for (StudentAnswerSheet x : sheets) {
+            
             if (x.getScore(key) > score) {
+                
                 score = x.getScore(key);
                 name = x.getName();
+                
             }
+            
         }
+        
         return name;
+        
     }
 }

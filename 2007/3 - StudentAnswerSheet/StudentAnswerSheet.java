@@ -17,6 +17,7 @@ public class StudentAnswerSheet
     /**
      * Constructor for objects of class StudentAnswerSheet
      */
+    
     public StudentAnswerSheet(String name, ArrayList<String> answers)
     {
         
@@ -31,6 +32,7 @@ public class StudentAnswerSheet
      * @param  key  the list of correct answers, represented as strings of length one
      * @return this student's test score
      */
+    
     public double getScore(ArrayList<String> key)
     {
         
@@ -49,6 +51,7 @@ public class StudentAnswerSheet
     /**
      * @return the name of the student
      */
+    
     public String getName() {
         
         return name;

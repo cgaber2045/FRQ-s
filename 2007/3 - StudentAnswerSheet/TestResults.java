@@ -12,7 +12,10 @@ public class TestResults
 {
     private ArrayList<StudentAnswerSheet> sheets;
 
-    // Constructor for the class TestResults
+    /**
+     * Constructor for objects of class StudentAnswerSheet
+     */
+    
     public TestResults(ArrayList<StudentAnswerSheet> sheets) {
         
         this.sheets = sheets;

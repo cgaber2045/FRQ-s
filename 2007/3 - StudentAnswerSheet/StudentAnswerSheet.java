@@ -27,7 +27,7 @@ public class StudentAnswerSheet
     }
 
     /**
-     * Gets the scores of the student
+     * Gets the score of the student
      *
      * @param  key  the list of correct answers, represented as strings of length one
      * @return this student's test score

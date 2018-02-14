@@ -11,14 +11,16 @@ import java.util.Arrays;
 public class NumberCube
 {
     /**
-     * An example of a method - replace this comment with your own
-     *
-     * @param  y  a sample parameter for a method
-     * @return    the sum of x and y
+     * Rolls a random number between 1 and 6, inclusive
+     * 
+     * @return an integer between 1 and 6, inclusive
      */
+    
     public int toss()
     {
+        
         return 1 + (int)(Math.random() * ((6 - 1) + 1));
+        
     }
     
 }

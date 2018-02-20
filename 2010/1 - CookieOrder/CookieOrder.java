@@ -33,4 +33,8 @@ public class CookieOrder
     {
         return numBoxes;
     }
+    
+    public String toString() {
+        return variety;
+    }
 }

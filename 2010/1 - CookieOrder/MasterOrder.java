@@ -6,6 +6,7 @@
  * @version (a version number or a date)
  */
 import java.util.ArrayList;
+
 public class MasterOrder
 {
     // instance variables - replace the example below with your own
@@ -39,18 +40,17 @@ public class MasterOrder
     }
     
     public int removeVariety(String cookieVar) {
-        int count = 0;
-        String variety = goodies.getVariety();
-        
-        for (int i = goodies.size() - 1; i >= 0; i--) {
-            
-            if(variety.equals(cookieVar)) {
-                count += goodies.getNumBoxes();
-                goodies.remove(i);
-            }
-            
-        }
-        
-        return count;
+         int count = 0;
+         for (int i = this.orders.size() - 1; i >= 0; i--) {
+             if (cookieVar.equals(this.orders.get(i).getVariety())) {
+                 count += this.orders.get(i).getNumBoxes();
+                 this.orders.remove(i);
+             }
+         }
+         return count;
+    }
+    
+    public String toString() {
+        return orders.toString();
     }
 }

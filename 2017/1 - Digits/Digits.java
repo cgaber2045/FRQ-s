@@ -2,8 +2,7 @@
 /**
  * Write a description of class Digits here.
  *
- * @author (your name)
- * @version (a version number or a date)
+ * @author Chris Gaber
  */
 import java.util.ArrayList;
 

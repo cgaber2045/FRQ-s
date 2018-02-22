@@ -2,15 +2,18 @@
 /**
  * Write a description of class BatteryCharger here.
  *
- * @author (your name)
- * @version (a version number or a date)
+ * @author Chris Gaber
  */
 public class BatteryCharger
 {
     
     /** rateTable has 24 entries representing the charging costs for hours 0 through 23. */
      private int[] rateTable;
-     
+    
+    /** Constructor for the class BatteryCharger
+     *  @param rateTable the array of rates for each hour.
+     */  
+    
      public BatteryCharger(int[] rateTable) {
          this.rateTable = rateTable;
      }

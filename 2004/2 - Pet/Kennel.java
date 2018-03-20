@@ -22,8 +22,10 @@ public class Kennel
      * makes all pets in the kennel speak
      */
     public void allSpeak() {
+        
         for (Pet p : petList) {
             System.out.println(p.getName() + ": " + p.speak());
         }
+        
     }
 }

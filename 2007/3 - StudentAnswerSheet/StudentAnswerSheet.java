@@ -16,6 +16,8 @@ public class StudentAnswerSheet
     
     /**
      * Constructor for objects of class StudentAnswerSheet
+     * @param name name of student
+     * @param answers arraylist of answers
      */
     
     public StudentAnswerSheet(String name, ArrayList<String> answers)
@@ -49,6 +51,7 @@ public class StudentAnswerSheet
     }
     
     /**
+     * gets name of student.
      * @return the name of the student
      */
     
